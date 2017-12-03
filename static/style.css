@@ -1,0 +1,311 @@
+
+/*http://www.color-hex.com/color-palette/1408*/
+
+body {
+    margin: 30px;
+    margin-top: 15px;
+    margin-bottom: 5em;
+    color: #2a2424;
+
+    /*height: 2vh;
+    overflow: hidden;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding: 0;
+}
+
+.error {
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 90%;
+    color:#d6d6df;
+}
+.error .unicodeicon { font-size: 190%; display: block;}
+
+
+/* ---- INFO ---- */
+.boite_info {
+    /*border: dashed 1px gray;*/
+
+    margin-bottom: 0.9em;
+}
+.boite_info h1 {
+    margin:0;
+    font-size: 2.2em;
+    max-width: 90%;
+    line-height: 98%;
+}
+.boite_info .patentnumber {
+    font-family: courier, monospace, monospace;
+    font-size: 110%;
+    font-weight: bold;
+    color: #bbb;
+    margin-right: 2em;
+}
+.boite_info .code_cpc {
+    font-family: sans-serif;
+    font-size: 80%;
+    font-weight: normal;
+    color: #979aaa;
+}
+.boite_info .date_line {
+    display: flex;
+    align-items: center; /* align vertical */
+}
+.boite_info .date {
+    font-size: 120%;
+    margin-right: 1em;
+    margin-left: 2px;
+}
+.boite_info .inventor {
+    font-size: 95%;
+}
+.boite_info .assignee-list {
+    margin-left: 2em;
+    font-family: sans-serif;
+    font-size: 90%;
+    color: #979aaa;
+}
+
+
+
+
+
+
+/* ---- VIEW ---- */
+.boite_view {
+    /*border: dashed 1px #c8515f;*/
+
+    display: flex ;
+    /*grid-template-columns: 1fr 30ch 1fr;*/
+    /*grid-gap: 6px;*/
+
+}
+
+.figures {
+    /*grid-column: 1 ;*/
+    max-width: 44em;
+    text-align: center;
+
+}
+
+.figures img {
+    vertical-align: middle;
+}
+
+.legende {
+    /*grid-column: 2 ;*/
+    position: sticky;
+    top:1em;
+    height:100%;
+    max-height: 95vh;
+    overflow: auto;
+
+    min-width: 16em;
+
+    padding: 0.6em;
+    margin:0.4em;
+
+    background-color: #f1f1f3;
+}
+.legende ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+.legende li {
+    margin:0;
+    padding: 0;
+    margin-bottom: 0.1em;
+    /*display: flex;*/
+}
+.legende li.non-consecutive {
+    margin-bottom: 0.6em;
+}
+.legende li .legend_number {
+    display: inline-block;
+    width:2em;
+    text-align: right;
+    margin-right:0.6em;
+    padding: 0;
+
+    /*font-weight: bold;*/
+    font-family: monospace;
+}
+
+
+.description {
+    position:sticky;
+    top:1em;
+    height: 80%;
+    max-height: 75vh;
+    overflow: auto;
+
+    min-width: 14em;
+    padding: 6px;
+}
+.description h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+}
+.description-text {
+
+    height:100%-5em;
+    overflow: auto;
+
+    /*background-color: #8b8589;*/
+
+    padding: 6px;
+
+    line-height:150%;
+    font-size:90%;
+    text-align: justify;
+}
+.description p {
+    width: 95%;
+}
+/*.highlightfromlegend {
+    background-color: #e1e1e3;
+    font-size: 95%;
+    padding:1px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}*/
+.highlightfromlegend {
+    font-size: 90%;
+    font-weight: bold;
+    color: #b5b0b0;
+    padding:1px;
+}
+.highlightfromlegend:hover {
+    color: #005b96;
+}
+
+
+
+/*--- CiTATiON---*/
+
+.citations {
+    margin-top: 2em;
+}
+.citations h4 {
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+    color: #bfbaba;
+}
+.listcited, .listcitedby{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/* --- citation link box -- */
+
+a.citedlinkbox  {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+
+    margin:0.4em;
+    width:18em;
+    text-decoration: none;
+    color: #2a2424;
+}
+a.citedlinkbox:hover .citedinfowrapper {
+    position:relative;
+    left:0.4em;
+}
+a.citedlinkbox:hover img {
+    transform: scale(1.5, 1.5);
+}
+a.citedlinkbox:hover .unicodethumbnail {
+    font-size: 2.2em;
+}
+.citedlinkbox .citedimgwrapper {
+    float: left;
+    width: 3.4em;
+    height: 3.4em;
+    padding: 2px;
+    margin-right: 0.5em;
+    text-align: right;
+}
+.citedlinkbox .citedimgwrapper img {
+    max-width:100%;
+    max-height:100%;
+}
+.citedlinkbox .citedinfowrapper {
+    overflow: hidden;
+}
+.citedlinkbox .citedinfowrapper h5 {
+    margin:0;
+    padding: 0;
+}
+.citedlinkbox .date {
+    font-size: 105%;
+    margin-right: 0.5em;
+}
+.citedlinkbox .inventor {
+    font-size: 90%
+}
+.citedlinkbox .unicodethumbnail { font-size: 2em; color: #d6d6df; display: block;}
+
+.nocitation {
+    margin-left: 4em; color: #d2d2d2; font-size: 95%; font-family: serif;
+}
+.nocitation .unicodeicon { font-size: 120%; }
+
+
+
+
+.navlinks {
+    position: absolute;
+    top: -0.5em;
+    right: 0.5em;
+    text-align: right;
+}
+.navlinks a {
+    text-decoration: none;
+    color:  #2a2424;
+    display:block;
+
+    font-weight: bold;
+    font-size: 0.9em;
+    font-style: sans-serif;
+
+    opacity: 0.4;
+    padding:0.15em;
+}
+.navlinks a:hover {
+    color: #ec4141;
+}
+
+.scrolllinks {
+    position: absolute;
+    text-align: right;
+}
+.top {
+    bottom: -10px;
+    right: 10px;
+}
+.end {
+    position: static;
+}
+.scrolllinks a {
+    text-decoration: none;
+    color:  #2a2424;
+    display:block;
+
+    font-weight: bold;
+    font-size: 2em;
+    font-style: sans-serif;
+
+    opacity: 0.4;
+    padding:0.15em;
+}
+.scrolllinks a:hover {
+    color: #ec4141;
+}
