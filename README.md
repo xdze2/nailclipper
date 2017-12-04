@@ -4,6 +4,6 @@
 
 # Nail Clippers patents
 
-See the example about **[nail clipper](https://xdze2.github.io/nailclipper/)**.
+See the example in action about **[nail clipper](https://xdze2.github.io/nailclipper/)**.
 
-or to the code **[patent_decoder](https://github.com/xdze2/patent_decoder)**.
+or go to the code **[patent_decoder](https://github.com/xdze2/patent_decoder)**.
