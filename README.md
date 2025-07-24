@@ -1,6 +1,7 @@
 
 ![fig0](https://xdze2.github.io/nailclipper/static/figures_extracted/US7131448-fig0.png)
 
+Web interface to browse patents and see the figures 
 
 # Nail Clippers patents
 
